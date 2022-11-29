@@ -1,0 +1,11 @@
+./build/ARM/gem5.opt configs/example/se.py \
+-c "/home/yaom/testbench/a;/home/yaom/testbench/a;/home/yaom/testbench/a;/home/yaom/testbench/a;/home/yaom/testbench/a;/home/yaom/testbench/a;/home/yaom/testbench/a;/home/yaom/testbench/a;/home/yaom/testbench/a;/home/yaom/testbench/a;/home/yaom/testbench/a;/home/yaom/testbench/a;" \
+--ruby \
+--num-cpus=12 --cpu-type=DerivO3CPU \
+--network=garnet \
+--topology=Ring \
+--chi-config=/home/yaom/gem5-21.1.0.2/configs/example/noc_config/Ring.py  \
+--num-l3caches=2 --l3_size=1MB \
+--num-dirs=2 \
+--location="0;8;3;9;4;5;10;7;1;13;14;11;12;2;6;15" \
+--router-latency=1
